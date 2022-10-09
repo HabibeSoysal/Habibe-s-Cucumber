@@ -5,7 +5,7 @@ Feature: Amazon Search
     Given Kullanici amazon sayfasina gider
     Then Kullanici nutella aratir
     And Sonuclarin nutella icerdigini test eder
-    And Sayfayi kapatir
+
 
   Scenario: TC02 Kullanici amazonda Selenium aratir
 
