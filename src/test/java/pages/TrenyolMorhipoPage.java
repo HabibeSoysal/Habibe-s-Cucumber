@@ -17,9 +17,16 @@ public class TrenyolMorhipoPage {
     @FindBy(xpath = "//*[@class='vQI670rJ']")
     public WebElement trendyolSearchBox;
 
-    @FindBy(xpath = "//*[@class='vQI670rJ']")
-    public WebElement trendyolMakasAramaSonucu;
+    @FindBy (xpath = "//*[@id='onetrust-accept-btn-handler']")
+    public WebElement trendyolCerezKabul;
 
+    @FindBy(xpath = "//*[@class='dscrptn']")
+    public WebElement trendyolMakasAramaSonucu;
+    @FindBy(xpath = "//*[@id='pw-search-input']")
+    public WebElement morhipoSearchBox;
+
+    @FindBy(xpath = "//*[@i//*[@id='total-product-count']")
+    public WebElement makasSonuc;
 
 
 

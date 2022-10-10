@@ -11,10 +11,6 @@ import org.junit.runner.RunWith;
         tags="@All",//'k' tag ayni anda calistirmak isterseniz "@gp1 ve @gp2"
         dryRun = false
 )
-
-
-
-
 public class Runner {
     /*
      Runner Class'ı TestNG'deki XMl mantığı ile çalışır. Çalıştırmak istediğimiz senartolara tag belirtiriz
