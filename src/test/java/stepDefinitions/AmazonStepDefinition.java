@@ -10,7 +10,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class AmazonStepDefinition {
-    AmazonPage amazonPageObje= new AmazonPage();
+    AmazonPage amazonPageObje = new AmazonPage();
 
     @Given("Kullanici amazon sayfasina gider")
     public void kullaniciAmazonSayfasinaGider() {
@@ -19,14 +19,14 @@ public class AmazonStepDefinition {
 
     @Then("Kullanici nutella aratir")
     public void kullaniciNutellaAratir() {
-        amazonPageObje.aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
+        amazonPageObje.aramaKutusu.sendKeys("Nutella" + Keys.ENTER);
     }
 
     @And("Sonuclarin nutella icerdigini test eder")
 
     public void sonuclarinNutellaIcerdiginiTestEder() {
-        String arananKElime="Nutella";
-        String actualAramaSonucu=amazonPageObje.aramaSonucElementi.getText();
+        String arananKElime = "Nutella";
+        String actualAramaSonucu = amazonPageObje.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucu.contains(arananKElime));
     }
 
@@ -37,26 +37,27 @@ public class AmazonStepDefinition {
 
     @Then("Kullanici Selenium aratir")
     public void kullaniciSeleniumAratir() {
-        amazonPageObje.aramaKutusu.sendKeys("Selenium"+ Keys.ENTER);
+        amazonPageObje.aramaKutusu.sendKeys("Selenium" + Keys.ENTER);
     }
 
 
     @And("Sonuclarin Selenium icerdigini test eder")
     public void sonuclarinSeleniumIcerdiginiTestEder() {
-        String arananKElime="Selenium";
-        String actualAramaSonucu=amazonPageObje.aramaSonucElementi.getText();
+        String arananKElime = "Selenium";
+        String actualAramaSonucu = amazonPageObje.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucu.contains(arananKElime));
     }
 
     @Then("Kullanici iphone aratir")
     public void kullaniciIphoneAratir() {
-        amazonPageObje.aramaKutusu.sendKeys("iphone"+ Keys.ENTER);
+        amazonPageObje.aramaKutusu.sendKeys("iphone" + Keys.ENTER);
     }
 
     @And("Sonuclarin iphone icerdigini test eder")
     public void sonuclarinIphoneIcerdiginiTestEder() {
-        String arananKElime="iphone";
-        String actualAramaSonucu=amazonPageObje.aramaSonucElementi.getText();
+        String arananKElime = "iphone";
+        String actualAramaSonucu = amazonPageObje.aramaSonucElementi.getText();
         Assert.assertTrue(actualAramaSonucu.contains(arananKElime));
     }
+
 }
