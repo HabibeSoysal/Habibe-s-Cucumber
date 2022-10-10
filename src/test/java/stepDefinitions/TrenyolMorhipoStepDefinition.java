@@ -58,10 +58,10 @@ public class TrenyolMorhipoStepDefinition {
 
     @And("yeni sekmede morhipo'ya gidiniz")
     public void yeniSekmedeMorhipoYaGidiniz() throws InterruptedException {
-        Driver.getDriver().switchTo().newWindow(WindowType.TAB).get(ConfigReader.getProperty("morhipoUrl"));
+     /*   Driver.getDriver().switchTo().newWindow(WindowType.TAB).get(ConfigReader.getProperty("morhipoUrl"));
         Thread.sleep(3000);
         morhipoHandle = Driver.getDriver().getWindowHandle();
-
+*/
     }
 
     @And("makas aratiniz morhipo")

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags="@All",//'k' tag ayni anda calistirmak isterseniz "@gp1 ve @gp2"
+        tags="@parametre",//'k' tag ayni anda calistirmak isterseniz "@gp1 ve @gp2"
         dryRun = false
 )
 public class Runner {
